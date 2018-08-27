@@ -1,0 +1,20 @@
+{
+    // Tells eslint to use Yarn package manager
+    "eslint.packageManager": "yarn",
+    // The following are global user settings not workspace settings
+    "window.titleBarStyle": "custom",
+    "php.validate.enable": false,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "workbench.iconTheme": "vscode-icons",
+    "sync.gist": "MY SYNC GITHUB GIST KEY",
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.forceDownload": false,
+    "sync.quietSync": true,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "git.autofetch": true,
+    "editor.smoothScrolling": true,
+    "workbench.statusBar.feedback.visible": false,
+}

@@ -1,0 +1,48 @@
+{
+  "name": "sample-package",
+  "version": "1.0.0",
+  "description": "sample package config includes modules that required by dotfiles",
+  "main": "index.js",
+  "repository": "https://github.com/tufantunc/dotfiles.git",
+  "author": "Tufan Tunç <tufan.tunc.91@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "eslint /src && flow --color always && jest --coverage",
+    "test:eslint": "eslint Static/src",
+    "test:flow": "flow --color always",
+    "test:jest": "jest --coverage"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "testMatch": [
+      "/test/**/?(*.)+(test).js"
+    ],
+    "setupFiles": [
+      "/test/setup-jest.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "setup-jest.js"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-compat": "^2.5.1",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.13.0",
+    "flow-bin": "^0.78.0",
+    "iflow-jquery": "^1.2.4",
+    "is-visible": "^2.2.0",
+    "jest": "^23.4.2"
+  }
+}

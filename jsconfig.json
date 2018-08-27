@@ -1,0 +1,20 @@
+/*
+    Bu dosya VS Code için js intellisense ayarlarını düzenler
+    Reference: https://code.visualstudio.com/docs/languages/jsconfig
+*/
+{
+    "compilerOptions": {
+        "target": "es6",
+        "baseUrl": "."
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "bower_components",
+        "tmp",
+        "temp"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}
